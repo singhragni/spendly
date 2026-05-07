@@ -15,3 +15,13 @@ git commit -m "landing  and terms and policy link to footer"
 
 Create a "Terms and Conditions" page in Spendly.
 
+
+#------------------------------------
+
+Create a " Terms and Conditions page for Spendly
+1. Add a new route in [@app.py]:
+Get /terms ->render template/terms.html
+2. Create template/terms.html with generic terms and conditions contnent use appropriate for a person expense tracking trackeing app.
+Include sections like: Accept the terms and conditions 
+
+3 In @templates/landing.html update the "Terms and conditions" footer link href from # to "/terms".
