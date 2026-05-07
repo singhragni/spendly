@@ -4,183 +4,128 @@
 
 {% block content %}
 
-<section class="terms-page">
-    <div class="terms-inner">
+<section class="policy-page">
 
-        <h1 class="terms-title">Terms and Conditions</h1>
-        <p class="terms-updated">Last updated: May 7, 2026</p>
+    <h1 class="policy-page-title">Terms and Conditions</h1>
+    <p class="policy-updated">Last updated: May 7, 2026</p>
 
-        <p class="terms-intro">
-            Please read these Terms and Conditions carefully before using Spendly.
-            By creating an account or accessing any part of the service, you agree to be bound by these terms.
-            If you do not agree, do not use Spendly.
+    <p class="policy-intro">
+        Please read these Terms and Conditions carefully before using Spendly.
+        By creating an account or accessing any part of the service, you agree to be bound by these terms.
+        If you do not agree, do not use Spendly.
+    </p>
+
+    <div class="policy-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By registering for or using Spendly ("the Service"), you confirm that you are at least 18 years old,
+            have read and understood these Terms, and agree to comply with them.
+            These Terms form a legally binding agreement between you and Spendly.
         </p>
-
-        <div class="terms-section">
-            <h2>1. Acceptance of Terms</h2>
-            <p>
-                By registering for or using Spendly ("the Service"), you confirm that you are at least 18 years old,
-                have read and understood these Terms, and agree to comply with them.
-                These Terms form a legally binding agreement between you and Spendly.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>2. Description of Service</h2>
-            <p>
-                Spendly is a personal expense tracking application that allows you to log, categorise, and
-                review your financial transactions. The Service is provided for personal, non-commercial use only.
-                We reserve the right to modify or discontinue the Service at any time without notice.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>3. User Accounts</h2>
-            <p>
-                You are responsible for maintaining the confidentiality of your login credentials.
-                You must notify us immediately if you suspect unauthorised access to your account.
-                Spendly is not liable for any loss resulting from unauthorised use of your account.
-                You may not transfer your account to another person.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>4. Data You Enter</h2>
-            <p>
-                All expense data you record in Spendly remains yours. We do not sell, share, or use your
-                personal financial data for advertising purposes. You are solely responsible for the accuracy
-                of the information you enter. Spendly is a tracking tool and does not provide financial,
-                tax, or investment advice.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>5. Privacy</h2>
-            <p>
-                Your use of Spendly is also governed by our Privacy Policy.
-                We collect only the data necessary to provide and improve the Service.
-                We employ reasonable security measures to protect your information, but no system is
-                completely secure and we cannot guarantee absolute security.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>6. Acceptable Use</h2>
-            <p>You agree not to:</p>
-            <ul>
-                <li>Use the Service for any unlawful purpose or in violation of any regulations.</li>
-                <li>Attempt to gain unauthorised access to any part of the Service or its infrastructure.</li>
-                <li>Upload malicious code or interfere with the operation of the Service.</li>
-                <li>Reverse-engineer, decompile, or otherwise attempt to extract the source code of the Service.</li>
-            </ul>
-        </div>
-
-        <div class="terms-section">
-            <h2>7. Intellectual Property</h2>
-            <p>
-                All content, design, logos, and software associated with Spendly are the property of Spendly
-                and its licensors. You may not copy, reproduce, or distribute any part of the Service without
-                prior written consent.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>8. Disclaimer of Warranties</h2>
-            <p>
-                The Service is provided "as is" and "as available" without warranties of any kind, either
-                express or implied. Spendly does not warrant that the Service will be uninterrupted, error-free,
-                or free of viruses or other harmful components.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>9. Limitation of Liability</h2>
-            <p>
-                To the maximum extent permitted by law, Spendly shall not be liable for any indirect,
-                incidental, special, or consequential damages arising from your use of the Service,
-                including but not limited to loss of data or financial loss.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>10. Changes to These Terms</h2>
-            <p>
-                We may update these Terms from time to time. When we do, we will revise the "Last updated"
-                date at the top of this page. Continued use of the Service after any changes constitutes
-                your acceptance of the revised Terms.
-            </p>
-        </div>
-
-        <div class="terms-section">
-            <h2>11. Contact Us</h2>
-            <p>
-                If you have any questions about these Terms, please contact us at
-                <a href="mailto:support@spendly.app">support@spendly.app</a>.
-            </p>
-        </div>
-
-        <div class="terms-accept">
-            <p>
-                By using Spendly, you acknowledge that you have read, understood, and agree to these
-                Terms and Conditions.
-            </p>
-            <a href="{{ url_for('register') }}" class="btn-primary">Get started</a>
-        </div>
-
     </div>
-</section>
 
-<style>
-    .terms-page {
-        max-width: 780px;
-        margin: 3rem auto 5rem;
-        padding: 0 1.5rem;
-    }
-    .terms-title {
-        font-size: 2.25rem;
-        margin-bottom: 0.25rem;
-    }
-    .terms-updated {
-        color: var(--muted, #888);
-        font-size: 0.875rem;
-        margin-bottom: 1.75rem;
-    }
-    .terms-intro {
-        font-size: 1.05rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-    }
-    .terms-section {
-        margin-bottom: 2rem;
-    }
-    .terms-section h2 {
-        font-size: 1.15rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
-    .terms-section p,
-    .terms-section ul {
-        font-size: 0.97rem;
-        line-height: 1.75;
-        color: var(--text-secondary, #444);
-    }
-    .terms-section ul {
-        padding-left: 1.5rem;
-    }
-    .terms-section ul li {
-        margin-bottom: 0.35rem;
-    }
-    .terms-accept {
-        border-top: 1px solid var(--border, #e5e5e5);
-        padding-top: 2rem;
-        margin-top: 2rem;
-        text-align: center;
-    }
-    .terms-accept p {
-        margin-bottom: 1.25rem;
-        font-size: 0.97rem;
-        color: var(--text-secondary, #444);
-    }
-</style>
+    <div class="policy-section">
+        <h2>2. Description of Service</h2>
+        <p>
+            Spendly is a personal expense tracking application that allows you to log, categorise, and
+            review your financial transactions. The Service is provided for personal, non-commercial use only.
+            We reserve the right to modify or discontinue the Service at any time without notice.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>3. User Accounts</h2>
+        <p>
+            You are responsible for maintaining the confidentiality of your login credentials.
+            You must notify us immediately if you suspect unauthorised access to your account.
+            Spendly is not liable for any loss resulting from unauthorised use of your account.
+            You may not transfer your account to another person.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>4. Data You Enter</h2>
+        <p>
+            All expense data you record in Spendly remains yours. We do not sell, share, or use your
+            personal financial data for advertising purposes. You are solely responsible for the accuracy
+            of the information you enter. Spendly is a tracking tool and does not provide financial,
+            tax, or investment advice.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>5. Privacy</h2>
+        <p>
+            Your use of Spendly is also governed by our <a href="/policy">Privacy Policy</a>.
+            We collect only the data necessary to provide and improve the Service.
+            We employ reasonable security measures to protect your information, but no system is
+            completely secure and we cannot guarantee absolute security.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the Service for any unlawful purpose or in violation of any regulations.</li>
+            <li>Attempt to gain unauthorised access to any part of the Service or its infrastructure.</li>
+            <li>Upload malicious code or interfere with the operation of the Service.</li>
+            <li>Reverse-engineer, decompile, or otherwise attempt to extract the source code of the Service.</li>
+        </ul>
+    </div>
+
+    <div class="policy-section">
+        <h2>7. Intellectual Property</h2>
+        <p>
+            All content, design, logos, and software associated with Spendly are the property of Spendly
+            and its licensors. You may not copy, reproduce, or distribute any part of the Service without
+            prior written consent.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>8. Disclaimer of Warranties</h2>
+        <p>
+            The Service is provided "as is" and "as available" without warranties of any kind, either
+            express or implied. Spendly does not warrant that the Service will be uninterrupted, error-free,
+            or free of viruses or other harmful components.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>9. Limitation of Liability</h2>
+        <p>
+            To the maximum extent permitted by law, Spendly shall not be liable for any indirect,
+            incidental, special, or consequential damages arising from your use of the Service,
+            including but not limited to loss of data or financial loss.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>10. Changes to These Terms</h2>
+        <p>
+            We may update these Terms from time to time. When we do, we will revise the "Last updated"
+            date at the top of this page. Continued use of the Service after any changes constitutes
+            your acceptance of the revised Terms.
+        </p>
+    </div>
+
+    <div class="policy-section">
+        <h2>11. Contact Us</h2>
+        <p>
+            If you have any questions about these Terms, please contact us at
+            <a href="mailto:support@spendly.app">support@spendly.app</a>.
+        </p>
+    </div>
+
+    <div class="policy-accept">
+        <p>
+            By using Spendly, you acknowledge that you have read, understood, and agree to these
+            Terms and Conditions.
+        </p>
+        <a href="{{ url_for('register') }}" class="btn-primary">Get started</a>
+    </div>
+
+</section>
 
 {% endblock %}

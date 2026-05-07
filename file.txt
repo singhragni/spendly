@@ -24,4 +24,15 @@ Get /terms ->render template/terms.html
 2. Create template/terms.html with generic terms and conditions contnent use appropriate for a person expense tracking trackeing app.
 Include sections like: Accept the terms and conditions 
 
-3 In @templates/landing.html update the "Terms and conditions" footer link href from # to "/terms".
+3 In @templates/base.html update the "Terms and conditions" footer link href from # to "/terms".
+
+
+#------------------
+
+Create policy Page  for spendly 
+1. Add
+ a new route in [@app.py]:
+ get /policy - render templates/policy.html
+ 2 Create templates/policy.html page with generic polices
+ 3. In @templates/base.html update the "Privacy Policy" footer link href fron # to "/policy".
+ aLSO MAKE SURE THE APPEARENCE OF @templates/policy.html match the websites theme 
